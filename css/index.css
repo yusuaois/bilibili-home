@@ -271,6 +271,7 @@
 .main .recommended-card .card-image {
   position: relative;
   border-radius: 6px;
+  height: 153px;
   overflow: hidden;
 }
 
