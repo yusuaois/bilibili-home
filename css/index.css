@@ -261,7 +261,6 @@
   padding: 0 60px;
   box-sizing: border-box;
 }
-
 .main .recommended-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -274,13 +273,11 @@
   height: 153px;
   overflow: hidden;
 }
-
 .main .card-image img {
   width: 100%;
   height: 100%;
   /* vertical-align: middle; */
 }
-
 .card-image .image-mask {
   position: absolute;
   bottom: 0;
