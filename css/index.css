@@ -1,0 +1,207 @@
+.bili-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* nav 左侧入口 */
+.left-entry {
+  display: flex;
+}
+.left-entry .entry-title {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  color: #fff;
+  margin: 15px;
+}
+.left-entry .entry-title svg {
+  margin-right: 6px;
+}
+
+/* nav 中间搜索区域 */
+.center-search-container {
+  flex: 1;
+  height: 40px;
+  padding: 0 48px 0 4px;
+  border-radius: 8px;
+  border: 1px solid rgba(227, 229, 231, 50%);
+  background-color: rgba(241, 242, 243, 50%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.center-search-container:hover {
+  background-color: #fff;
+}
+.center-search-container .nav-search-content {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  padding: 0 8px;
+}
+.nav-search-content .nav-search-input {
+  flex: 1;
+  background-color: transparent;
+  overflow: hidden;
+  padding-right: 8px;
+}
+.center-search-container .nav-search-button {
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.center-search-container .nav-search-button:hover {
+  background-color: #e3e4e5;
+}
+
+/* nav 右侧入口 */
+.right-entry {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.right-entry .header-avater {
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
+  position: relative;
+}
+.right-entry .header-avater a {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #00aeec;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.right-entry .right-entry-item {
+  min-width: 50px;
+  margin-right: 4px;
+}
+.right-entry .right-entry-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.right-entry-item a span {
+  font-size: 13px;
+}
+.right-entry .upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #fb7299;
+  margin-left: 10px;
+}
+.right-entry .upload span{
+    margin-left: 5px;
+}
+
+/* banner 区域*/
+.bili-nav{
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+.bili-banner{
+    position: relative;
+    height: 155px;
+    width: 100%;
+    overflow: hidden;
+}
+.bili-banner img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bili-banner .logo{
+    width:100%;
+    height: 100%;
+    padding: 0 64px;
+    display: flex;
+    align-items: flex-end;
+}
+.bili-banner .logo a{
+    position: relative;
+    width: 162px;
+    height: 78px;
+    margin-bottom: 10px;
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(37, 37, 37, 0.676), transparent);
+}
+
+/* 频道区域 */
+.bili-channel{
+    height: 110px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+.bili-channel .channel-icon{
+    display: flex;
+}
+.bili-channel .channel-icon a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+}
+.bili-channel .icon-bg{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+.bili-channel .icon-bg_dynamic{
+    background-color: #ff9212;
+}
+.bili-channel .icon-bg_popular{
+    background-color: #f07775;
+}
+.bili-channel .icon-bg_channel{
+    background-color: #59ca73;
+}
+.bili-channel .icon-bg svg{
+    height: 25px;
+    width: 25px;
+}
+
+.bili-channel .icon-bg span{
+    text-align: center;
+}
