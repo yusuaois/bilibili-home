@@ -117,91 +117,140 @@
   background-color: #fb7299;
   margin-left: 10px;
 }
-.right-entry .upload span{
-    margin-left: 5px;
+.right-entry .upload span {
+  margin-left: 5px;
 }
 
 /* banner 区域*/
-.bili-nav{
-    position: absolute;
-    top: 0;
-    z-index: 1000;
+.bili-nav {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
 }
-.bili-banner{
-    position: relative;
-    height: 155px;
-    width: 100%;
-    overflow: hidden;
+.bili-banner {
+  position: relative;
+  height: 155px;
+  width: 100%;
+  overflow: hidden;
 }
-.bili-banner img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.bili-banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.bili-banner .logo{
-    width:100%;
-    height: 100%;
-    padding: 0 64px;
-    display: flex;
-    align-items: flex-end;
+.bili-banner .logo {
+  width: 100%;
+  height: 100%;
+  padding: 0 64px;
+  display: flex;
+  align-items: flex-end;
 }
-.bili-banner .logo a{
-    position: relative;
-    width: 162px;
-    height: 78px;
-    margin-bottom: 10px;
+.bili-banner .logo a {
+  position: relative;
+  width: 162px;
+  height: 78px;
+  margin-bottom: 10px;
 }
-.mask{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(37, 37, 37, 0.676), transparent);
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(37, 37, 37, 0.676), transparent);
 }
 
 /* 频道区域 */
-.bili-channel{
-    height: 110px;
-    padding: 0 60px;
-    display: flex;
-    align-items: center;
+.bili-channel {
+  height: 110px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
 }
-.bili-channel .channel-icon{
-    display: flex;
+.bili-channel .channel-icon {
+  display: flex;
 }
-.bili-channel .channel-icon a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 24px;
+.bili-channel .channel-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
 }
-.bili-channel .icon-bg{
-    width: 46px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-bottom: 6px;
+.bili-channel .icon-bg {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 6px;
 }
-.bili-channel .icon-bg_dynamic{
-    background-color: #ff9212;
+.bili-channel .icon-bg_dynamic {
+  background-color: #ff9212;
 }
-.bili-channel .icon-bg_popular{
-    background-color: #f07775;
+.bili-channel .icon-bg_popular {
+  background-color: #f07775;
 }
-.bili-channel .icon-bg_channel{
-    background-color: #59ca73;
+.bili-channel .icon-bg_channel {
+  background-color: #59ca73;
 }
-.bili-channel .icon-bg svg{
-    height: 25px;
-    width: 25px;
+.bili-channel .icon-bg svg {
+  height: 25px;
+  width: 25px;
+}
+.bili-channel span {
+  text-align: center;
+}
+.bili-channel .right-channel-container {
+  width: 100%;
+  display: flex;
 }
 
-.bili-channel .icon-bg span{
-    text-align: center;
+/* 左侧频道项列表 */
+.bili-channel .channel-items_left {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+.bili-channel .channel-items_left a {
+  height: 26px;
+  line-height: 26px;
+  background-color: #f6f7f8;
+  border: 1px solid #f1f2f3;
+  border-radius: 6px;
+  text-align: center;
+  color: #61666d;
+}
+
+/* 右侧频道项列表 */
+.bili-channel .channel-items_right {
+  width: 240px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column;
+  row-gap: 10px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  border-left: 1px solid #e3e5e7;
+}
+.channel-items_right a {
+    width: 100%;
+    height: 28px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.channel-items_right svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    fill: #61666d;
+}
+.channel-items_right span {
+    color: #61666d;
 }
